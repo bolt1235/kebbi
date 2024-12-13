@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/cameraservice-common-v0.1.1.2_0807f46e.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/cameraservice-sdk-187034de.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/httpclient-4.5.3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/httpcore-4.4.6.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/voice-common-debug.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/voice-interfaces-debug.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c0d1be1fe3639ca2cf753a3d5d3d3f0/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7/jars/libs/voice-sdk-debug.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+repositories {
+    google()  // 添加 Google's Maven repository
+    mavenCentral()  // 添加 Maven Central repository
+    flatDir {
+        dirs 'libs'
+    }
+}
+configurations {
+    all*.exclude group: 'org.apache.httpcomponents'
+}
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.nuwarobotics.example"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 添加 Java 8 功能支持
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    // 添加这个配置来解决重复类的问题
+    packagingOptions {
+        // 已有的配置
+        pickFirst 'org/apache/http/util/ExceptionUtils.class'
+        pickFirst 'org/apache/http/util/LangUtils.class'
+        pickFirst 'org/apache/http/util/NetUtils.class'
+        pickFirst 'org/apache/http/util/TextUtils.class'
+        pickFirst 'org/apache/http/util/VersionInfo.class'
+        pickFirst 'org/apache/http/ConnectionClosedException.class'
+
+        // 添加这行来解决 INDEX.LIST 问题
+        pickFirst 'META-INF/INDEX.LIST'
+
+        // 其他 META-INF 相关的配置
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/*.kotlin_module'
+
+        // META-INF 相关的 pickFirst 配置
+        pickFirst 'META-INF/io.netty.versions.properties'
+        pickFirst 'META-INF/MANIFEST.MF'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:support-v4:28.0.0"
+    implementation "com.android.support:support-v13:28.0.0"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.cloud:google-cloud-dialogflow:2.1.0'
+    implementation 'io.grpc:grpc-okhttp:1.30.0'
+    implementation 'com.android.support:multidex:1.0.3'  // 新增
+    implementation files('libs/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7.aar')
+    implementation files('libs/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release.aar')
+}

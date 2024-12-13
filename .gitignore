@@ -1,0 +1,12 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file
+local.properties
+
+# Sensitive files
+app/src/main/assets/kebbi-rwel-*.json
+*.jks
+*.keystore
+google-services.json

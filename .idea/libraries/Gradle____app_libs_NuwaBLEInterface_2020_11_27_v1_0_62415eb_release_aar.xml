@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83d83fe55f75fe518240f4ad5ce1780a/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83d83fe55f75fe518240f4ad5ce1780a/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83d83fe55f75fe518240f4ad5ce1780a/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
